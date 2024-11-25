@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, seriff;
+}
+.header{
+   position: fixed;
+   width: 95%;
+   background-color:rgb(11, 117, 125);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20Px 40px;
+    align-items: center; 
+}
+.header h1{
+    color: white
+}
+.header ul{
+    display: flex;
+    color:white;
+    font-size:1.5em;
+    gap:20px;
+    font-weight:400;
+   list-style: none;
+   
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    right: 40px;
+    margin-left: -6%;
+}
+.logo i{
+font-size:2em;
+}
+
+/* .img2{
+   animation-name: loading;
+    animation-duration:3s;
+ /
+   
+} */
+
+.section-five h1{
+   color:rgb(11, 117, 125);
+}
+.section-five{
+    padding: 100px;
+    display: flex;
+    gap: 40px;  
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color:rgb(11, 117, 125);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    
+}
+footer li{
+    font-size:1.5em;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Content Styles */
+.footer-content {
+    margin-top: 20px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color:white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header ul{
+        display: none;
+    }
+    .section-five{
+        display: block;
+        font-size: 1em;
+        padding: 20px;
+        animation: none;
+    }
+    .header  i{
+        margin-left: -3%;
+    }
+.img2{
+    margin-left: -8%;
+    animation: none;
+}
+    .footer-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-content p {
+        font-size: 14px;
+    }
+}
